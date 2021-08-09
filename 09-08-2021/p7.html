@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		.btn1{
+			margin-left: 30%;
+    		margin-top: 3%;
+   		    width: 5%;
+  		    height: 35px;
+  		    background-color: blue;
+    		color: white;
+		}
+		.btn2{
+			margin-left: 1%;
+    		margin-top: 3%;
+   		    width: 5%;
+  		    height: 35px;
+		}
+		.btn3{
+			margin-left: 1%;
+    		margin-top: 3%;
+   		    width: 5%;
+  		    height: 35px;
+  		    background-color: lightgray;
+    		color: black;
+		}
+	</style>
+</head>
+<body bgcolor="#DEC49B">
+	<p>
+		<h2 align="center">KM Custom HTML Form Example Using AppleScript<br>(by JMichaelTX)</h2>
+		
+	</p>
+	<table border="1" cellpadding="5" cellspacing="0" align="center">
+		<tr>
+			<td><b> Name:</b></td>
+			<td>
+				<input type="text" name="name" value="John AppleScript">
+			</td>
+			<td> </td>
+		</tr>
+		<tr>
+			<td><b>Email:</b></td>
+			<td>
+				<input type="email" name="email" value="Johnny@AppleScript.com">
+			</td>
+			<td> </td>
+		</tr>
+		<tr>
+			<td><b>Password:</b></td>
+			<td>
+				<input type="Password" name="pass" value="1234">
+			</td>
+			<td> </td>
+		</tr>
+		<tr>
+			<td><b>Approval Required:</b><br>Click on the button or text to<br>check/uncheck. 
+			</td>
+			<td>
+				<input type="checkbox" name="check">Do you Approve?
+			</td>
+		</tr>
+		<tr>
+			<td><b>Pick Your Favorite:</b><br>click on the button or text to<br>  select</td>
+			<td>
+				<input type="radio" name="choice">Choice A<br>
+				<input type="radio" name="choice">Choice B<br>
+				<input type="radio" name="choice">Choice C<br>
+			</td>
+		</tr>
+		<tr>
+			<td><b>Popup Menu:</b></td>
+			<td>
+				<select>
+					<option>Texas-TX</option>
+					<option>Texas-Tv</option>
+					<option>Texas-Tl</option>
+					<option>Texas-L</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td><b>List</b><br>setup options:
+				<ul>
+					<li>Number of Rows to display</li>
+					<li>Allow Multi select</li>
+				</ul>
+			</td>
+			<td>
+				<select>
+					<option>California--CA</option>
+					<option>Colorado--CO</option>
+					<option>Connecticut--CN</option>
+					<option>Dalifornia--DA</option>
+					<option>Dolorado--DO</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<b>Field Ignore by KM</b>
+			</td>
+			<td>
+				<input type="text" name="t1" value="10,384">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<b>Text Area</b>
+			</td>
+			<td>
+				<textarea rows="5" cols="50">Now is the time for all goodmen to come to the aid of there country 
+				</textarea>
+			</td>
+		</tr>
+	</table>
+	<input type="submit" name="save" value="Save" class="btn1">
+	<input type="button" name="cancel" value="Cancel" class="btn2">
+	<input type="button" name="resize" value="Resize" class="btn3">
+</body>
+</html>
