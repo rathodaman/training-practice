@@ -1,0 +1,34 @@
+fieldset{
+			/*width: 50%;*/
+		}
+		div{
+			background-color: CAD51A;
+			padding-left: 20%;
+			padding-right: 20%;
+		}
+		legend{
+			font-size: 25px;
+    		font-style: oblique;
+    		font-weight: 600;
+    		font-family: cursive;
+    		background-color: black;
+    		color: aliceblue;
+		}
+		b{
+			margin-left:  25%;
+    		font-size: 35px;
+   		    font-style: revert;
+   		   
+    		color: black;
+		}
+		.btn{
+			width: 70px;
+    		height: 30px;
+    		margin-left: 35%;
+    		background-color: greenyellow;
+    		color: black;
+		}
+		#btn{
+			margin-left: 5%;
+		}
+		

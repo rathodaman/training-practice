@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		body{
+			/*background-image: linear-gradient(right to left,orange,yellow,blue);*/
+			  background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+
+		}
+		.form1
+		{
+   		    margin-left: 35%;
+    		margin-top: 6%;
+    		border: solid darkred;
+    		border-left: solid darkred 12px;
+    		width: 25%;
+    		/* border-top: solid blue; */
+    		padding-left: 10%;
+    		padding-top: 4%;
+   		    padding-bottom: 4%;
+    		border-radius: 24px;
+    		background-color: mistyrose;
+    
+		}
+	</style>
+</head>
+<body>
+	<div class="form1" >
+            <img src="login.png" width="150" height="150" style="margin-left: -130px; margin-top: 60px;">
+            <form style="margin-top: -230px;margin-left: 42px;" action="donorLogin" method="post" >	
+            <h1 style="margin-left: -25px;">User Login</h1>
+            <label>Username:</label>
+            <input type="text" class="txt" name="unm" required>
+            <br>
+            <br>&nbsp;&nbsp;&nbsp;
+            <label>Password:</label>
+            <input type="password" class="txt" name="pass" required>
+            <br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input class="btn" type="submit" name="btn" value="Login" >
+            <br>
+            <br>
+            Not a User?&nbsp;<a href="#">Click here</a>Register
+        </form>
+        </div>
+
+</body>
+</html>
