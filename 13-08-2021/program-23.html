@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>program-23</title>
+	<style type="text/css">
+		body{
+			font-size: 30px;
+		}
+	</style>
+</head>
+<body>
+	<h3>Program 23.23.	Take 5 numbers and calculate percentage. According to that percentage print grade.<br>
+•	If marks <50 then Grade is F.<br>
+•	if marks >=50 <60 then Grade is D.<br>
+•	if marks >=60 <70 then Grade is C.<br>
+•	if marks >=70 <80 then Grade is B.<br>
+•	if marks >=80 <90 then Grade is A.<br>
+•	if marks >=90 then Grade is A+<br>
+</h3>
+
+
+	<script>
+	var first = parseInt(prompt("Enter First No : "));
+	var second = parseInt(prompt("Enter Second No : "));
+	var third = parseInt(prompt("Enter Third No : "));
+	var fourth = parseInt(prompt("Enter Fourth No : "));
+	var fifth = parseInt(prompt("Enter Fifth No : "));
+ 
+	var per = ((first + second + third + fourth + fifth) / 5);
+ 
+	document.write("<br>");
+	
+	document.write( "The First No is : " + first + "<br>");
+	document.write( "The Second No is : " + second + "<br>");
+	document.write( "The Third No is : " + third + "<br>");
+	document.write( "The Fourth No is : " + fourth + "<br>");
+	document.write( "The Fifth No is : " + fifth + "<br>");
+	
+	document.write("The Percentage of 5 No is : " + per );
+	if (per>=90) 
+	{
+		document.write(" A+ Grade");
+	}
+	else if (per<=90 && per>=80) 
+	{
+		document.write(" A Grade");
+	}
+	else if (per<=80 && per>=70) 
+	{
+		document.write(" B Grade");
+	}
+	else if (per<=70 && per>=60) 
+	{
+		document.write(" C Grade");
+	}
+	else if (per<=60 && per>=50) 
+	{
+		document.write(" D Grade");
+	}
+	else if (per<=50) 
+	{
+		document.write(" F Grade");
+	}
+</script>
+</body>
+</html>

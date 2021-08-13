@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>program-22</title>
+	<style type="text/css">
+		body{
+			font-size: 30px;
+		}
+	</style>
+</head>
+<body>
+	<h3>Program 22.	Make a simple calculator using switch case.<br>
+	1.Addition<br>
+	2.Subtraction<br>
+	3.Multiplication<br>
+	4.Division
+</h3>
+
+
+	<script>
+	
+		var operator = prompt('Enter operator ( either +, -, * or / ): ');
+		
+		var number1 = parseInt(prompt('Enter first number: '));
+		var number2 = parseInt(prompt('Enter second number: '));
+
+		document.write( "Given First No is : " + number1 + " <br> ");
+		document.write( "Given Second No is : " + number2 + " <br> ");
+		switch(operator) {
+    		case '+':
+         		result = number1 + number2;
+				document.write( "Addition of the Numbers is :  "+ number1 + " + " + number2 + " = " + result  +"<br>");
+        		break;
+
+    			case '-':
+         		result = number1 - number2;
+        			document.write( "Subtraction of the Numbers is :  "+ number1 + " - " + number2 + " = " + result  +"<br>");
+        		break;
+
+    			case '*':
+         		result = number1 * number2;
+        			document.write( "Multiplication of the Numbers is :  "+ number1 + " * " + number2 + " = " + result  +"<br>");
+       			 break;
+
+    			case '/':
+        		 result = number1 / number2;
+        			document.write( "Multiplication of the Numbers is :  "+ number1 + " / " + number2 + " = " + result  +"<br>");
+        		break;
+
+    			default:
+        			document.write('Invalid operator');
+        		break;
+}
+	
+ 
+</script>
+</body>
+</html>

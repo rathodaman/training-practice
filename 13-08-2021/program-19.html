@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>program-19</title>
+	<style type="text/css">
+		body{
+			font-size: 30px;
+		}
+	</style>
+</head>
+<body>
+	<h3>Program 19.	Take a number from the user. Take starting number & ending number from the user. Generate multiplication table of that number.</h3>
+
+
+	<script>
+	var tableno = parseInt(prompt("Enter Starting Number : "));
+	var endno = parseInt(prompt("Enter Ending Number : "));
+	
+	document.write( "First Number is : " + tableno+ "<br>");
+	document.write( "Second Number is : " + endno+ "<br>");
+
+
+	for (var i = 1; i <=endno; i++) {
+		var multi=tableno*i;
+		document.write( tableno + " * " + i + " = " + multi +"<br>");
+	}
+
+	
+</script>
+</body>
+</html>

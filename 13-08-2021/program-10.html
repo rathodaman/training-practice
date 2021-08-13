@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>program-10</title>
+	<style type="text/css">
+		body{
+			font-size: 30px;
+		}
+	</style>
+</head>
+<body>
+	<h3>Program 10. Write a program to swap 2 numbers using third variable.</h3>
+
+
+	<script>
+	var no1 = parseInt(prompt("Enter First Number : "));
+	var no2 = parseInt(prompt("Enter Second Number : "));
+	
+
+	document.write( "Before Swapping Numbers<br>");
+	document.write( " Number1 is : " + no1+ "<br>");
+	document.write( " Number2 is : " + no2+ "<br>");
+	
+	var temp;
+	temp=no1;
+	no1=no2;
+	no2=temp;
+
+	document.write( "After Swapping Numbers<br>");
+	document.write( " Number1 is : " + no1+ "<br>");
+	document.write( " Number2 is : " + no2+ "<br>");
+ 
+</script>
+</body>
+</html>

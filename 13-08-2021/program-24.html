@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>program-24</title>
+	<style type="text/css">
+		body{
+			font-size: 30px;
+		}
+	</style>
+</head>
+<body>
+	<h3>Program 24.	Take starting number and ending number from the user and print following series. Output :-
+Enter starting number : 30
+Enter ending number : 0 <br>
+ 30
+ 27
+ 24
+ 21
+ 18
+ 15
+ 12
+ 9
+ 6
+ 3
+ 0
+</h3>
+
+
+	<script>
+	var tableno = parseInt(prompt("Enter Starting Number : "));
+	var endno = parseInt(prompt("Enter Ending Number : "));
+	
+	document.write( "First Number is : " + tableno+ "<br>");
+	document.write( "Second Number is : " + endno+ "<br>");
+
+
+	for (var i = tableno; i >=endno; i=i-3) {
+		var multi=tableno*i;
+		// document.write( tableno + " * " + i + " = " + multi +"<br>");
+		document.write( i+"<br>");
+	}
+
+	
+</script>
+</body>
+</html>

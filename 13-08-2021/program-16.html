@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>program-16</title>
+	<style type="text/css">
+		body{
+			font-size: 30px;
+		}
+	</style>
+</head>
+<body>
+	<h3>Program 16.	Take 3 numbers and find smallest number using logical operator</h3>
+
+
+	<script>
+	var no1 = parseInt(prompt("Enter First Number : "));
+	var no2 = parseInt(prompt("Enter Second Number : "));
+	var no3 = parseInt(prompt("Enter Third Number : "));
+	
+	document.write( "First Number is : " + no1+ "<br>");
+	document.write( "Second Number is : " + no2+ "<br>");
+	document.write( "Third Number is : " + no3+ "<br>");
+	
+	if(no1<=no2 && no1<=no3)
+	{
+			document.write( "Smallest Number is: " + no1 );		
+	}
+	else if(no2<=no1 && no2<=no3)
+	{
+		document.write( "Smallest Number is: " + no2 );	
+	}
+	else
+	{
+		document.write( "Smallest Number is: " + no3 );	
+	}
+	
+ 
+</script>
+</body>
+</html>

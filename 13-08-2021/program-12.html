@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>program-12</title>
+	<style type="text/css">
+		body{
+			font-size: 30px;
+		}
+	</style>
+</head>
+<body>
+	<h3>Program 12.	Take a number check if a number is less than 100 or not. If it is less than 100 then check if it is odd or even</h3>
+
+
+	<script>
+	var no = parseInt(prompt("Enter the Number : "));
+	
+	if(no <100 && no>0){
+		document.write( "Given Number  " + no + " is a Less than 100 <br>");
+		
+		if (no % 2 ==0) 
+		{
+			document.write( "Given No " + no + " is Even <br>");
+		}
+		else
+		{
+			document.write( "Given No " + no + " is Odd <br>");
+		}
+	}
+	else if (no>100)
+		{
+		  document.write( "Given Number  " + no + " is a Not Less than 100 <br>");
+		}
+	
+	
+ 
+</script>
+</body>
+</html>
