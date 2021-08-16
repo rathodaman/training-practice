@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Keyboard Events</title>
+	<style type="text/css">
+		body{
+			font-size: 30px;
+		}
+		input{
+			background-color: black;
+			color: lightgray;
+		}
+
+	</style>
+</head>
+<body>
+	<h3>Keyboard Events practice</h3>
+	<script type="text/javascript">
+		{
+			function aap() {
+				// body...
+				// n1.btn1.value=n1.btn1.value.toUpperCase();
+				alert("hello ");
+			}
+			function dbl() {
+				// body...
+				// n1.btn2.value=n1.btn2.value.toLowerCase();
+				alert("how are you");
+			}
+			function oop() {
+				// body...
+				alert("hello every one how are you");
+			}
+		}
+	</script>
+	<form name="n1">
+	<input type="text" onkeyup="aap()"  name="btn1" >&nbsp;&nbsp;
+	<input type="text" onkeydown="dbl()" name="btn2" >&nbsp;&nbsp;
+	<input type="text" onkeypress="oop()"  name="btn3" >&nbsp;&nbsp;
+	</form>
+</body>
+</html>

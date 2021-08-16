@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>date</title>
+	<style type="text/css">
+		body{
+			font-size: 30px;
+		}
+		input{
+			background-color: black;
+			color: lightgray;
+		}
+
+	</style>
+</head>
+<body onload="date()">
+	<h3>date practice</h3>
+
+	<script type="text/javascript">
+		{
+			function date() {
+				// body...
+				var time=new Date();
+				var h,m,s;
+				h=time.getHours();
+				m=time.getMinutes()+1;
+				s=time.getSeconds();
+				document.write(h+":"+m+":"+s+"<br>");
+				document.write(d);
+			}
+			
+		}
+	</script>
+	
+</body>
+</html>

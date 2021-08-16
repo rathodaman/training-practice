@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Window Events</title>
+	<style type="text/css">
+		body{
+			font-size: 30px;
+		}
+		input{
+			background-color: black;
+			color: lightgray;
+		}
+
+	</style>
+</head>
+<body onresize="aap()">
+	<h3>Window Events practice</h3>
+	<form name="n1">
+	<input type="text" onload="aap()"  name="btn1" >&nbsp;&nbsp;
+	<input type="text" onkeydown="dbl()" name="btn2" >&nbsp;&nbsp;
+	<input type="text" onkeypress="oop()"  name="btn3" >&nbsp;&nbsp;
+	</form>
+
+	<script type="text/javascript">
+		{
+			function aap() {
+				// body...
+				// n1.btn1.value=n1.btn1.value.toUpperCase();
+				 alert("hello ");
+				// document.write("hello window");
+			}
+			
+		}
+	</script>
+	</body>
+</html>

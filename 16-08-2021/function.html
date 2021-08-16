@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Funtions</title>
+	<style type="text/css">
+		body{
+			font-size: 30px;
+		}
+		input{
+			background-color: black;
+			color: lightgray;
+		}
+
+	</style>
+</head>
+<body>
+	<h3>Funtion practice</h3>
+	<script type="text/javascript">
+		{
+			var a=	parseInt(prompt("enter  value 1"));
+			var b=  parseInt(prompt("enter  value 2"));
+			function add(a,b) {
+				// body...
+				var add =a+b;
+				document.write("Addition : " + add);
+			}
+			function sub(a,b) {
+				// body...
+				var add =a-b;
+				document.write("Addition : " + add);
+			}
+			function multi(a,b) {
+				// body...
+				var add =a*b;
+				document.write("Addition : " + add);
+			}
+			function divi(a,b) {
+				// body...
+				var add =a/b;
+				document.write("Addition : " + add);
+			}
+			
+		}
+	</script>
+	<input type="button" onclick="add(a,b)" name="btn1" value="Add">&nbsp;&nbsp;
+	<input type="button" onclick="sub(a,b)" name="btn2" value="Sub">&nbsp;&nbsp;
+	<input type="button" onclick="multi(a,b)" name="btn3" value="Multi">&nbsp;&nbsp;
+	<input type="button" onclick="divi(a,b)" name="btn4" value="Divi">&nbsp;&nbsp;
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>date</title>
+	<style type="text/css">
+		body{
+			font-size: 30px;
+		}
+		input{
+			background-color: black;
+			color: lightgray;
+		}
+
+	</style>
+</head>
+<body onload="date()">
+	<h3>date practice</h3>
+
+	<script type="text/javascript">
+		{
+			function date() {
+				// body...
+				var d=new Date();
+				var dd,mm,yy;
+				dd=d.getDate();
+				mm=d.getMonth()+1;
+				yy=d.getFullYear();
+				document.write(dd+"-"+mm+"-"+yy+"<br>");
+				document.write(d);
+			}
+			
+		}
+	</script>
+	
+</body>
+</html>

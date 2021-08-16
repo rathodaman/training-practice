@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form Events</title>
+	<style type="text/css">
+		body{
+			font-size: 30px;
+		}
+		input{
+			/*background-color: black;
+			color: lightgray;*/
+		}
+
+	</style>
+</head>
+<body>
+	<h3>Form Events practice</h3>
+	<form name="n1" onsubmit="Submit()">
+	<input type="text" onfocus="myfocus()" onblur="blurFuntion(this)" onchange="changeFunction(this)" name="btn1" id="btn1" >
+	<input type="text" onfocus="dbl()" name="btn2" >&nbsp;&nbsp;
+	<input type="submit"  name="btn3" >&nbsp;&nbsp;
+	</form>
+	<div id="d1"></div>
+	<script type="text/javascript">
+		{
+			function myfocus(){
+				// body...
+				 document.getElementById("btn1").style.background="yellow";
+				
+			}
+			function dbl() {
+				// body...
+				 n1.btn2.style.background="green";
+				 n1.btn2.style.color="red";
+				// alert("how are you");
+			}
+			
+			function blurFuntion(element) {
+				// body...
+				element.style.background="";
+
+			}
+			function Submit() {
+				// body...
+				alert("You have submitted all details");
+			}
+			function changeFunction(element) {
+				// body...
+				var x=element.value;
+				document.getElementById('d1').innerHTML=x;
+
+			}
+		}
+	</script>
+	
+</body>
+</html>
