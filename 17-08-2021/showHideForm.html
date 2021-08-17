@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Show Hide Form </title>
+	<style type="text/css">
+		body{
+			font-size: 30px;
+		}
+		
+
+	</style>
+</head>
+<body>
+	<h3>Show Hide Form</h3>
+	
+    
+    <div id="data"></div>
+    
+    <button onclick="fun()">Click me</button>
+   
+	<script type="text/javascript">
+		{		
+            var flag=true;
+
+            function fun()
+            {
+                var cform="<form action='Comment'>Enter Name:<br><input type='text' name='name'/>";
+                    document.getElementById("data").innerHTML="Data Loaded";
+                    if (flag) {
+                        document.getElementById("data").innerHTML=cform;
+                        flag=false;
+                    }
+                    else{
+                        document.getElementById("data").innerHTML="";
+                        flag=true;
+                    }
+
+
+
+                var elements=document.getElementById('p1');
+                 elements.innerHTML="<b>My Name is Aman Rathod</b>";  
+                console.log(elements);
+               
+            }			
+        }    
+	</script>
+	
+</body>
+</html>

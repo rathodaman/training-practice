@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>getElementById</title>
+	<style type="text/css">
+		body{
+			font-size: 30px;
+		}
+		
+
+	</style>
+</head>
+<body>
+	<h3>getElementById practice</h3>
+	
+    <p id="p1">My name is a aman rathod</p>
+    <button onclick="fun()">Click me</button>
+
+	<script type="text/javascript">
+		{		
+            function fun()
+            {
+                var a=document.getElementById('p1');
+               var b= a.innerHTML="<p>hello how are you</p>";
+                console.log(a);
+               
+            }			
+        }    
+	</script>
+	
+</body>
+</html>

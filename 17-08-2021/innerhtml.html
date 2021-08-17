@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>getElementsByTagName </title>
+	<style type="text/css">
+		body{
+			font-size: 30px;
+		}
+		
+
+	</style>
+</head>
+<body>
+	<h3>getElementsByTagName</h3>
+	
+    <p class="p1">What is Your Name</p><br>
+    <div id="p1">
+        
+    </div>
+    
+    <button onclick="fun()">Click me</button>
+   
+	<script type="text/javascript">
+		{		
+            function fun()
+            {
+                var elements=document.getElementById('p1');
+                 elements.innerHTML="<b>My Name is Aman Rathod</b>";  
+                console.log(elements);
+               
+            }			
+        }    
+	</script>
+	
+</body>
+</html>

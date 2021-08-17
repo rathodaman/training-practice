@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>getElementByName </title>
+	<style type="text/css">
+		body{
+			font-size: 30px;
+		}
+		
+
+	</style>
+</head>
+<body>
+	<h3>getElementByName</h3>
+	
+    <p name="p1">My name is aman rathod</p>
+
+    
+    <button onclick="fun()">Click me</button>
+    <div id="id1"></div>
+	<script type="text/javascript">
+		{		
+            function fun()
+            {
+                var elements=document.getElementsByName('p1');
+                // for(var i=0;i<a.length;i++)
+                //  a[i].innerHTML="<p>hello how are you</p>";
+                console.log("a" + elements);
+                console.log(elements[0]);
+               
+            }			
+        }    
+	</script>
+	
+</body>
+</html>

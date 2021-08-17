@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Deleting Object Property </title>
+	<style type="text/css">
+		body{
+			font-size: 30px;
+		}
+        
+	</style>
+</head>
+<body>
+	<h3>Deleting Object Property</h3>
+	<script type="text/javascript">
+		{
+            var obj={
+                Name:"Aman",
+                SirName :"Rathod",
+                Age:23,
+                Gender:"Male",
+                Email:"aman.r@webcodegenie.com"
+            };
+            delete obj.Age;
+            for (var key in obj) {
+                document.write(key+" :"+obj[key]+"<br>");
+              
+            }
+           
+        }    
+	</script>
+	
+</body>
+</html>

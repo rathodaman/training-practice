@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Get css Styling </title>
+	<style type="text/css">
+		body{
+			font-size: 30px;
+		}
+        
+		
+
+	</style>
+</head>
+<body>
+	<h3>get CSS Styling From Dom</h3>
+
+    <p id="p1" style=" color: blue;font-size: 58px;font-weight: bold;">What is Your Name</p><br>
+    <button onclick="show()">Click me</button>
+  
+	<script type="text/javascript">
+		{
+            function show()
+            {
+                var elem= document.getElementById('p1');
+               var a= alert(elem.style.color);
+               var b= alert(elem.style.fontSize);
+               var c= alert(elem.style.fontWeight);
+               console.log(a);
+               console.log(b);
+               console.log(c);     
+            }		            
+           
+        }    
+	</script>
+	
+</body>
+</html>

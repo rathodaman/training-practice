@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Setting Object Property </title>
+	<style type="text/css">
+		body{
+			font-size: 30px;
+		}
+        
+	</style>
+</head>
+<body>
+	<h3>Setting Object Property</h3>
+	<script type="text/javascript">
+		{
+            var obj={
+                Name:"Aman",
+                SirName :"Rathod",
+                Age:23,
+                Gender:"Male",
+                Email:"aman.r@webcodegenie.com"
+            };
+            obj.Country="India";
+            for (var key in obj) {
+                document.write(key+" :"+obj[key]+"<br>");
+              
+            }
+           
+        }    
+	</script>
+	
+</body>
+</html>

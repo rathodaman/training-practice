@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>inner text </title>
+	<style type="text/css">
+		body{
+			font-size: 30px;
+		}
+		
+
+	</style>
+</head>
+<body>
+	<h3>inner text</h3>
+	
+    <form name="myform">
+        <input type="password" value="" name="userPass" onkeyup="fun()">
+        Strength:<span id="mylocation">no strength</span>
+    </form>
+    
+    <button onclick="fun()">Click me</button>
+   
+	<script type="text/javascript">
+		{		            
+            function fun()
+            {
+                var msg;
+                    if(document.myform.userPass.value.length>5) {
+                        msg="Great";
+                    }
+                    else{
+                        msg="Sorry";
+                    }
+                    document.getElementById("mylocation").innerHTML=msg;
+            }			
+        }    
+	</script>
+	
+</body>
+</html>

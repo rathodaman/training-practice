@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>getValue Of Form </title>
+	<style type="text/css">
+		body{
+			font-size: 30px;
+		}
+		
+
+	</style>
+</head>
+<body>
+	<h3>getValue Of Form</h3>
+
+    <input type="text" name="n1" id="d1">
+    <input type="text" name="n2" id="d2">
+    <button onclick="fun()">Click me</button>
+    <div id="id1"></div>
+	<script type="text/javascript">
+		{		
+            function fun()
+            {
+                var a=document.getElementById('d1').value;
+                var b=document.getElementById('d2').value;
+                var c=a+b
+                alert(c);
+
+            
+               
+            }			
+        }    
+	</script>
+	
+</body>
+</html>
