@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <style type="text/css">
+            body{
+                font-size: 30px;
+            }
+        </style>
+    </head>
+    <body>
+        <h3>Counter Demo Using Local Storage practice</h3>
+
+        <input type="button" onclick="counter()" id="btn" value="Click Me" width="100px" height="80px">
+        <span id="s1" >0</span>
+
+        <script type="text/javascript">
+        {
+            let count=0 ;
+            function counter()
+            {
+                count=count+1;
+                document.getElementById("s1").innerHTML=count;
+                localStorage.setItem("s1","count");
+            }
+           
+        }
+        </script>
+    </body>
+</html>

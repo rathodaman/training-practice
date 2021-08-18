@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <style type="text/css">
+            body{
+                font-size: 30px;
+            }
+        </style>
+    </head>
+    <body>
+        <h3>JSON Object practice</h3>
+
+        <script type="text/javascript">
+        {
+
+            var obj={
+                "firstname":"Aman","lastname":"Rathod",
+                "gender":"Male","Age":23,"marrid":false
+            }
+          
+            console.log(obj);
+            var str=JSON.stringify(obj);
+            console.log(str);
+            var ob= JSON.parse(str);
+           console.log(ob); 
+        }
+        </script>
+    </body>
+</html>

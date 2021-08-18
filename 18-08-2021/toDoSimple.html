@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <style type="text/css">
+            body{
+                font-size: 30px;
+            }
+            h3{
+                font-size: 30px;
+            }
+            #name{
+                    width: 250px;
+                    height: 40px; 
+                    background: aliceblue;
+                    color: black;
+                    
+            }
+            #btn{
+                    width: 5%;
+                    height: 40px;
+                    font-weight: bold;
+            }
+            #error{
+                font-size: 20px;
+                color: red;
+                
+                font-weight: bold;
+            }
+            #a1{
+                margin-left: 10%;
+            }
+        </style>
+    </head>
+    <body>
+        <h3>Simple To Do practice</h3>
+        <div id="a1">
+            <input type="text" id="name">
+            <input type="button" onclick="addMore()" value="Add" id="btn"><br>
+            <span id="error" ></span>
+            <ul id="box"></ul>
+        </div>
+        <script type="text/javascript">
+        {
+           function addMore()
+           {
+                document.getElementById("error").innerHTML=""; 
+                let name=document.getElementById("name").value;
+                if(name=="")
+                {
+                    document.getElementById("error").innerHTML="<span>'Please Enter name'</span>"; 
+                }
+                else
+                {
+                    let box=document.getElementById("box");
+                    let li= document.createElement("li");
+                    li.textContent=name;
+                    let pos=box.firstElementChild;
+                    if(pos=="")
+                    {
+                        box.appendChild(li);
+                    }
+                    else
+                    {
+                        box.insertBefore(li,pos);
+                    }
+                }
+
+           }
+           
+        }
+        </script>
+    </body>
+</html>

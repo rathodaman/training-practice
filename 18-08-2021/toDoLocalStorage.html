@@ -1,0 +1,77 @@
+<html>
+    <head>
+        <title>ToDo using Local Storage</title>
+        <style type="text/css">
+            body{
+                font-size: 30px;
+            }
+            h3{
+                font-size: 30px;
+            }
+            #name{
+                    width: 250px;
+                    height: 40px; 
+                    background: aliceblue;
+                    color: black;
+                    
+            }
+            #btn{
+                    width: 5%;
+                    height: 40px;
+                    font-weight: bold;
+            }
+            #error{
+                font-size: 20px;
+                color: red;
+                
+                font-weight: bold;
+            }
+            #a1{
+                margin-left: 10%;
+            }
+        </style>
+    </head>
+    <body>
+        <h3>ToDo using Local Storage practice</h3>
+        <div id="a1">
+            <input type="text" id="name">
+            <input type="button" onclick="showtask()" value="Add" id="btn"><br>
+            <span id="error" ></span>
+            <ul id="box"></ul><br>
+        </div>
+        <script type="text/javascript">
+        {
+            let input=document.getElementById("name");
+            let button=document.getElementById("btn");
+
+            button.addEventListener("click",function(){
+               inputval= input.value;
+               if (inputval.trim()!=0)
+                {
+                    let webtask=localStorage.getItem("localtask");
+                    if (webtask==null)
+                     {
+                        taskobj=[];
+                     }
+                     else
+                     {
+                        taskobj=JSON.parse(webtask);
+                     }
+                     taskobj.push(inputval);
+                     localStorage.setItem("localtask",JSON.stringify(taskobj));
+                }
+                showtask();
+            })
+            function showtask()
+            {
+                let keys= Object.keys(localStorage);
+                for(let key of keys)
+                {
+                    console.log(key[0]);
+                    document.getElementById("box").innerHTML=JSON.parse(localStorage.getItem(key));
+                }
+            }          
+         }
+        </script>
+    </body>
+</html>
