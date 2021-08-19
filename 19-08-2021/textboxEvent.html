@@ -1,0 +1,108 @@
+<html>
+    <head>
+        <title>Text Box to perform Event</title>
+        <style type="text/css">
+            body{
+                font-size: 30px;
+            }
+            h3{
+                font-size: 30px;
+            }
+            .inputrow{
+                margin-left: 10%;
+            }
+            .inputcol{
+                margin-left: 20%;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <h3>Text Box to perform Event practice</h3>
+        <div>
+            <form>
+                <input type="text" id="t1" class="inputrow"> <input type="text" id="t2" class="inputcol"><br>
+                <input type="text" id="t3" class="inputrow"> <input type="text" id="t4" class="inputcol"><br>
+                <input type="text" id="t5" class="inputrow"> <input type="text" id="t6" class="inputcol"><br>
+                <input type="text" id="t7" class="inputrow"> <input type="text" id="t8" class="inputcol"><br>
+                <input type="text" id="t9" class="inputrow"> <input type="text" id="t10" class="inputcol"><br>
+                <p id="id1"></p>
+            </form>
+        </div>
+        <script type="text/javascript">
+        {
+            document.getElementById("t1").addEventListener("input",function(){
+                var input=document.getElementById("t1").value;
+                document.getElementById("id1").innerHTML="You Wrote :" + input;
+            })
+
+            document.getElementById("t2").addEventListener("mouseover",function(){
+                var input=document.getElementById("t2");
+                input.style.borderColor="blue";
+                input.style.color="darkred";              
+            })
+
+            document.getElementById("t3").addEventListener("mouseout",function(){
+                var input=document.getElementById("t3");
+                input.style.backgroundColor="blue";
+                input.style.color="yellow";        
+            })
+            document.getElementById("t4").addEventListener("mousedown",function(){
+                var input=document.getElementById("t4");
+                input.style.backgroundColor="yellow";
+                input.style.color="black";
+                input.style.fontWeight="bold";            
+            })
+            document.getElementById("t5").addEventListener("mouseup",function(){
+                var input=document.getElementById("t5");
+                input.style.width="200px";
+                input.style.height="50px";
+                input.style.fontWeight="bold";            
+            })
+            document.getElementById("t6").addEventListener("mousemove",function(){
+                var input=document.getElementById("t6");
+                input.style.width="200px";
+                input.style.height="30px";
+                input.style.fontWeight="bold"; 
+                input.style.background="lightblue"; 
+                input.style.color="gray";                
+            })
+            document.getElementById("t7").addEventListener("dblclick",function(){
+                var input=document.getElementById("t7");
+                input.style.width="200px";
+                input.style.height="30px";
+                input.style.borderColor="green";
+                input.style.fontWeight="bold"; 
+                input.style.background="lightgreen"; 
+                input.style.color="gray";                
+            })
+            document.getElementById("t8").addEventListener("contextmenu",function(){
+                var input=document.getElementById("t8");
+                input.style.width="200px";
+                input.style.height="30px";
+                input.style.fontWeight="bold"; 
+                input.style.background="pink"; 
+                input.style.color="yellow";                
+            })
+            document.getElementById("t9").addEventListener("mouseenter",function(){
+                var input=document.getElementById("t9");
+                input.style.width="250px";
+                input.style.height="40px";
+                input.style.fontWeight="200px"; 
+                input.style.background="orange"; 
+                input.style.color="yellow";   
+                           
+            })
+            document.getElementById("t10").addEventListener("click",function(){
+                var input=document.getElementById("t10");
+                input.style.width="250px";
+                input.style.height="40px";
+                input.style.fontWeight="200px"; 
+                input.style.background="black"; 
+                input.style.color="white";                
+            })
+            
+        }
+        </script>
+    </body>
+</html>

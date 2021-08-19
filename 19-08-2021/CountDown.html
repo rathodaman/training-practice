@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>Count Down</title>
+        <style type="text/css">
+            body{
+                font-size: 30px;
+            }
+            h3{
+                font-size: 30px;
+            }
+           
+        </style>
+    </head>
+    <body>
+        <h3>Count Down using Timer Function</h3>
+        <button onclick="counter();">Start counter</button>
+        <button onclick="clearInterval(counting);">Stop counter</button>
+        <div id="demo">20</div>   
+        <script type="text/javascript">
+        {
+            var count = 20;
+            function counter()
+     {
+            counting = setInterval(function()
+            {
+                document.getElementById("demo").innerHTML = --count;
+                if (count == 0)
+                 {
+                    clearInterval(counting);
+                    count=21;
+                     alert("Time Up");
+                 }
+            }, 1000);
+     }
+        }
+        </script>
+    </body>
+</html>

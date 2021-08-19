@@ -1,0 +1,80 @@
+<html>
+    <head>
+        <title>Image Click Event</title>
+        <style type="text/css">
+            body{
+                font-size: 30px;
+            }
+            h3{
+                font-size: 30px;
+            }
+            #name{
+                    width: 250px;
+                    height: 40px; 
+                    background: aliceblue;
+                    color: black;
+                    
+            }
+            #btn{
+                    width: 5%;
+                    height: 40px;
+                    font-weight: bold;
+            }
+            #error{
+                font-size: 20px;
+                color: red;
+                
+                font-weight: bold;
+            }
+            #a1{
+                margin-left: 10%;
+            }
+        </style>
+    </head>
+    <body>
+        <h3>Image Click Event practice</h3>
+        <div id="a1">
+            <img src="p1.jpg" id="img" width="500px" height="300px">
+            <input type="button"   value="Add" id="btn"><br>
+            <span id="error" ></span>
+            <ul id="box"></ul>
+        </div>
+        <script type="text/javascript">
+        {
+               document.getElementById("img").addEventListener("click",function(){
+                let img= document.getElementById("img");
+                if(img.src.match("p1.jpg"))
+                {
+                    img.src="p2.jpg";
+                }
+                else
+                {
+                    img.src="p1.jpg";
+                }
+               });
+               document.getElementById("img").addEventListener("mouseenter",function(){
+                let img= document.getElementById("img");
+                if(img.src.match("p1.jpg"))
+                {
+                    img.src="p3.jpg";
+                }
+                else
+                {
+                    img.src="p1.jpg";
+                }
+               });
+               document.getElementById("img").addEventListener("contextmenu",function(){
+                let img= document.getElementById("img");
+                if(img.src.match("p1.jpg"))
+                {
+                    img.src="p4.jpg";
+                }
+                else
+                {
+                    img.src="p1.jpg";
+                }
+               });
+        }
+        </script>
+    </body>
+</html>

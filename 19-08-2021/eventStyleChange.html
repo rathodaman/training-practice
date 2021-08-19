@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <title>Div to perform Event and Change Style</title>
+        <style type="text/css">
+            body{
+                font-size: 30px;
+            }
+            h3{
+                font-size: 30px;
+            }
+            #name{
+                    width: 250px;
+                    height: 40px; 
+                    background: aliceblue;
+                    color: black;
+                    
+            }
+            #btn{
+                    width: 5%;
+                    height: 40px;
+                    font-weight: bold;
+            }
+            #error{
+                font-size: 20px;
+                color: red;
+                
+                font-weight: bold;
+            }
+            #a1{
+                margin-left: 10%;
+            }
+        </style>
+    </head>
+    <body>
+        <h3>Div to perform Event and Change Style practice</h3>
+        <div id="p1">hello How Are You</div>
+        <script type="text/javascript">
+        {
+               document.getElementById("p1").addEventListener("mouseover",function(){
+               document.getElementById("p1").style.color="blue";
+               document.getElementById("p1").style.fontSize="100px";
+               document.getElementById("p1").addEventListener("mouseout",function(){
+                document.getElementById("p1").style.color="black";
+                document.getElementById("p1").style.fontSize="30px";
+               document.getElementById("p1").innerHTML="hello How Are You";
+               });
+               });
+
+               document.getElementById("p1").addEventListener("click",function(){
+               let am = document.getElementById("p1").innerHTML="<p>I am Good And You.</p>"
+               document.getElementById("p1").style.backgroundColor="skyblue";
+               document.getElementById("p1").style.color="Red";
+               document.getElementById("p1").style.fontSize="100px";
+               });
+               
+               document.getElementById("p1").addEventListener("contextmenu",function(){
+               let am = document.getElementById("p1").innerHTML="<p>I am Also Fine.</p>"
+               document.getElementById("p1").style.backgroundColor="yellowgreen";
+               document.getElementById("p1").style.color="red";
+               document.getElementById("p1").style.fontSize="100px";
+               document.getElementById("p1").style.fontWeight="bold";
+               });
+               
+        }
+        </script>
+    </body>
+</html>

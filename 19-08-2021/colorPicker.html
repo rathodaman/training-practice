@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>Color Picker value will be apply to Div Style</title>
+        <style type="text/css">
+            body{
+                font-size: 30px;
+            }
+            h3{
+                font-size: 30px;
+            }
+            .saved-color 
+		    {
+                border: 1px solid #000;
+                display: inline-block;
+                margin: 2px;
+                height: 50px;
+                width: 200px;
+		    }
+        </style>
+    </head>
+    <body>
+        <h3>Color Picker value will be apply to Div Style</h3>
+        
+            <label>Pick A Color: </label>
+            <input id="color" type="color" /><br><br>
+            <div id="d1">
+                <!-- <div class="saved-color"></div> -->
+            </div>  
+        <script type="text/javascript">
+        {
+            var grid = document.getElementById("d1");
+            color_input = document.getElementById("color");
+            color_input.addEventListener("change", colorpicker,false )
+            function colorpicker(e)
+            {
+                var color=e.target.value;
+                addcolordiv(color);
+            };
+            function  addcolordiv(color)
+            {
+                var newdiv=document.createElement("div");
+                newdiv.className='saved-color';
+                newdiv.style.backgroundColor=color;
+                d1.appendChild(newdiv);
+            }
+        }
+        </script>
+    </body>
+</html>
