@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>Fade To Method In  Jquery</title>
+        
+        <script src="../jquery.js"></script>
+        <script>
+           
+            $(document).ready(function(){            
+                $(".btn_fadeto").click(function() {
+                    $("p").fadeTo("slow",0.4);     
+                })
+            });
+        </script>
+    </head>
+    <body>
+        <button class="btn_fadeto">Fade To</button>
+        <p>this is a paregraph.</p>
+    </body>
+</html>

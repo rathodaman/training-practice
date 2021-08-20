@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>Key Down Event In  Jquery</title>
+        
+        <script src="../jquery.js"></script>
+        <script>
+           
+            $(document).ready(function(){
+             $("input").keyup(function () {
+                $("input").css("backgroundColor","pink");
+                $("input").css("color","orange"); 
+             });
+            });
+        </script>
+    </head>
+    <body>
+       
+      Enter Your Name:  <input type="text" id="input1" width="80px" height="250px">
+        <button>Submit</button>
+    </body>
+</html>

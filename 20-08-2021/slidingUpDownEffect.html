@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Show and Hide Method In  Jquery</title>
+        
+        <script src="../jquery.js"></script>
+        <script>
+           
+            $(document).ready(function(){            
+                $(".btn_up").click(function() {
+                    $("p").slideUp();     
+                })
+                $(".btn_down").click(function() {
+                    $("p").slideDown();     
+                })
+            
+            });
+        </script>
+    </head>
+    <body>
+        <button class="btn_up">Slide Down</button>
+        <button class="btn_down">Slide Up</button>
+        <p>this is a paregraph.</p>
+        <p>this is a Another paregraph.</p>
+    </body>
+</html>

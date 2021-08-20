@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>Show and Hide Method In  Jquery</title>
+        
+        <script src="../jquery.js"></script>
+        <script>
+           
+            $(document).ready(function(){            
+                $(".btn_fadeout").click(function() {
+                    $("p").fadeOut();     
+                })
+                $(".btn_fadein").click(function() {
+                    $("p").fadeIn();     
+                })
+            
+            });
+        </script>
+    </head>
+    <body>
+        <button class="btn_fadeout">Fade Out</button>
+        <button class="btn_fadein">Fade In</button>
+        <p>this is a paregraph.</p>
+    </body>
+</html>

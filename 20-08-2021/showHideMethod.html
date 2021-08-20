@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>Show and Hide Method In  Jquery</title>
+        
+        <script src="../jquery.js"></script>
+        <script>
+           
+            $(document).ready(function(){            
+                $(".btn_hide").click(function() {
+                    $("p").hide();     
+                })
+                $(".btn_show").click(function() {
+                    $("p").show();     
+                })
+            
+            });
+        </script>
+    </head>
+    <body>
+        <button class="btn_hide">Hide</button>
+        <button class="btn_show">Show</button>
+        <p>this is a paregraph.</p>
+    </body>
+</html>

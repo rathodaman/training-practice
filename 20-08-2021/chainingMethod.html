@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>Chaining Method In  Jquery</title>
+        
+        <script src="../jquery.js"></script>
+        <script>
+           
+            $(document).ready(function(){            
+                $(".btn").click(function() {
+                    $("p").css("color","blue").slideUp(2000).slideDown(2000);    
+                })
+            });
+        </script>
+    </head>
+    <body>
+        <button class="btn">Chaining </button>
+        <p>this is a paregraph.</p>
+    </body>
+</html>

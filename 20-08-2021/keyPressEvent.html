@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Key Press Event In  Jquery</title>
+        
+        <script src="../jquery.js"></script>
+        <script>
+            var i=0;
+            $(document).ready(function(){
+             $("input").keypress(function () {
+                $("span").text(i=i+1);
+                
+             });
+            
+            });
+        </script>
+    </head>
+    <body>
+       
+      Enter Your Name:  <input type="text" id="input1" width="80px" height="250px">
+        <p>keypress: <span>0</span></p>
+    </body>
+</html>

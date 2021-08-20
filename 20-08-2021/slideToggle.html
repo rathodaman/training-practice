@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>Slide Toggle Method In  Jquery</title>
+        
+        <script src="../jquery.js"></script>
+        <script>
+           
+            $(document).ready(function(){            
+                $(".btn_slidetoggle").click(function() {
+                    $("p").slideToggle();     
+                })
+            });
+        </script>
+    </head>
+    <body>
+        <button class="btn_slidetoggle">Fade Toggle</button>
+        <p>this is a paregraph.</p>
+        <p>this is a another paregraph.</p>
+    </body>
+</html>

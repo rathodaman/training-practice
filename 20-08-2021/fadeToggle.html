@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>Fade Toggle Method In  Jquery</title>
+        
+        <script src="../jquery.js"></script>
+        <script>
+           
+            $(document).ready(function(){            
+                $(".btn_fadetoggle").click(function() {
+                    $("p").fadeToggle();     
+                })
+            });
+        </script>
+    </head>
+    <body>
+        <button class="btn_fadetoggle">Fade Toggle</button>
+        <p>this is a paregraph.</p>
+    </body>
+</html>
