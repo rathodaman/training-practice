@@ -1,0 +1,173 @@
+<html>
+    <head>
+        <title>validation plugin</title>
+        <style>
+            .error{
+                color: red;
+            }
+            legend{
+                font-size: 50px;
+                background-color: black;
+                color: cornsilk;
+            }
+            body{
+                background-color: #D7DBDD ;
+            }
+        </style>
+        <script type="text/javascript" src="../jquery.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.js"></script>
+        
+    </head>
+    <body>
+      
+            <form class="cmxform" id="signupForm" method="get" action=""> 
+            <fieldset>
+            <legend>validation form</legend>
+            <table align="center" cellpading="10" cellspacing="30">
+                <tr>
+                    <td>
+                        <label for="firstname">Firstname</label>
+                        <input id="firstname" name="firstname" type="text">
+                    </td>
+                    <td>
+                        <label for="lastname">Lastname</label>
+                        <input id="lastname" name="lastname" type="text">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="username">Username</label>
+                        <input id="username" name="username" type="text">
+                    </td>
+                    <td>
+                        <label for="email">Email</label>
+                        <input id="email" name="email" type="email">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="age">Age</label>
+                        <input id="age" name="age" type="number">
+                    </td>
+                    <td>
+                        <label for="dob">DOB</label>
+                        <input id="dob" name="dob" type="date">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="password">Password</label>
+                        <input id="password" name="password" type="password">
+                    </td>
+                    <td>
+                        <label for="confirm_password">Confirm password</label>
+                        <input id="confirm_password" name="confirm_password" type="password">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="mob">Mobile No</label>
+                        <input id="mob" name="mob" type="number">
+                    </td>
+                    <td>
+                        <label for="img">Upload Photo</label>
+                        <input id="img" name="img" type="file">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input class="submit" type="submit" value="Submit" align="center">
+                    </td>
+                </tr>
+            </table>
+            </fieldset>
+            <script>
+            $("document").ready(function(){
+               		// validate signup form on keyup and submit
+		$("#signupForm").validate({
+			rules: {
+				firstname: {
+                    required :true,
+                    minlength:3
+                 },
+				lastname: "required",
+				username: {
+					required: true,
+					minlength: 2
+				},
+				password: {
+					required: true,
+					minlength: 5
+				},
+				confirm_password: {
+					required: true,
+					minlength: 5,
+					equalTo: "#password"
+				},
+				email: {
+					required: true,
+					email: true
+				},
+                mob: {
+					required: true,
+					minlength: 10,
+                    maxlength: 12
+				},
+                dob:{
+                    required: true,
+
+                },
+               age:{
+                   required: true,
+                   min: 18,
+                   max: 100
+               },
+               img:{
+                    required: true
+               }
+				
+			},
+			messages: {
+				firstname: {
+                   required: "Please enter your firstname",
+                    minlength: "Your firstname must consist of at least 3 characters"
+                },
+				lastname: "Please enter your lastname",
+				username: {
+					required: "Please enter a username",
+					minlength: "Your username must consist of at least 2 characters"
+				},
+				password: {
+					required: "Please provide a password",
+					minlength: "Your password must be at least 5 characters long"
+				},
+				confirm_password: {
+					required: "Please provide a password",
+					minlength: "Your password must be at least 5 characters long",
+					equalTo: "Please enter the same password as above"
+				},
+				email: "Please enter a valid email address",
+				mob: {
+					required: "Please Enter Mobile No.",
+					minlength: "Your MObile No must be at least 10 Numbers long",
+					maxlength: "Your MObile No must be at least 12 Numbers long",
+				},
+                dob: {
+					required: "Please Enter Date Of Birth",
+				},
+                age:{
+                    required : "Please Enter Age",
+                    min: "Your Age Must be less to 18 Year",
+                    max: "Your Age Must be Greater to 100 Year"
+                },
+                img:{
+                    required : "Select Your Photo"
+                }
+               
+			}
+		});
+            });
+        </script>
+            </form>
+    </body>
+</html>
