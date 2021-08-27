@@ -1,0 +1,63 @@
+p{
+                color: red;
+            }
+            .error{
+                color: red;
+                margin-left: 80px;
+                font-size: 15px;
+            }
+            legend{
+                font-size: 50px;
+                /* background-color: black; */
+                color: black;
+                margin-left: 35%;
+                padding-top: 50px;
+            }
+            /* body{
+                background-color: #D7DBDD ;
+            } */
+            select{
+                  width: 250px;
+                  height: 60px;
+
+            }
+            .hobby{
+                  width: 300px;
+            }
+            .lightbox-table{
+  		    background-color: currentcolor;
+  		    margin-left: 10%;
+  		    margin-top: 5%;
+  	        }
+            .datatable-head-color{
+                background-color: Navy;
+                color: white;
+            }
+            .dt-button{
+                background-color: Navy !important;
+                color: white !important;
+            }
+            hr{
+                width: 90%;
+                height: 2%;
+                background-color: black;
+            }
+            input{
+                width: 50%;
+                height: 40px;
+                font-size: 20px;
+            }
+            #address{
+                width: 50%;
+            }
+            label{
+                font-size: 30px;
+                font-family: cursive;
+            }
+            fieldset{
+                background-color: darkseagreen;
+                margin-top: -60px;
+            }
+            .submit{
+                margin-left: 80%;
+            }

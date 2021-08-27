@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <title>Lightbox Example</title>
+  <link rel="stylesheet" href="lightbox/css/lightbox.css">
+  <script type="text/javascript" src="lightbox/jquery.js"></script>
+  <script type="text/javascript" src="lightbox/js/lightbox.js"></script>
+  <style type="text/css">
+  .lightbox-table{
+  		    background-color: currentcolor;
+  		    margin-left: 10%;
+  		    margin-top: 5%;
+  	}
+  </style>
+</head>
+<body>
+
+	<table border="1" class="lightbox-table">
+		<tr>
+			<td>
+				<a href="lightbox/images/img1.jpg" data-lightbox="galary"><img src="lightbox/images/img1.jpg" width="350px"></a>
+			</td>
+			<td>
+				<a href="lightbox/images/img6.jpg" data-lightbox="galary"><img src="lightbox/images/img6.jpg" width="350px"></a>
+			</td>
+			<td>
+				<a href="lightbox/images/img5.jpg" data-lightbox="galary"><img src="lightbox/images/img5.jpg" width="330px"></a>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="lightbox/images/img3.jpg" data-lightbox="galary"><img src="lightbox/images/img3.jpg" width="350px"></a>
+			</td>
+			<td>
+				<a href="lightbox/images/img4.jpg" data-lightbox="galary"><img src="lightbox/images/img4.jpg" width="350px"></a>
+			</td>
+			<td>
+				<a href="lightbox/images/b.jpg" data-lightbox="galary"><img src="lightbox/images/b.jpg" width="330px">
+			</td>
+		</tr>
+	</table>
+	<script>
+        $(document).ready(function(){
+            lightbox.option({
+            'resizeDuration': 2000,
+            'wrapAround': true
+            })
+      })
+</script> 
+</body>
+</html>
