@@ -1,0 +1,25 @@
+<html>
+<head>
+	<title>ajax</title>
+	<script type="text/javascript">
+        function ajaxCall(){
+          var xhttp=new XMLHttpRequest();
+          xhttp.onreadystatechange = function(){
+              if(xhttp.readyState==4 && xhttp.status==200)
+              {
+                  document.getElementById("mydata").innerHTML=xhttp.responseText;
+              }
+            //   else{
+            //       alert("Error in Loading");
+            //   }
+          };
+          xhttp.open("GET","dummyAjax1.html",true);
+          xhttp.send();
+        }
+	</script>
+</head>
+<body>
+    <div id="mydata"></div>
+	<input type="button" name="btn" onclick="ajaxCall()" value="Ajax Loading">
+</body>
+</html>

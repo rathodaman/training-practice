@@ -1,0 +1,44 @@
+<html>
+<head>
+	<title>ajax</title>
+	<script type="text/javascript">
+         function ajaxCall(){
+          var xhttp=new XMLHttpRequest();
+          xhttp.onreadystatechange = function(){
+              if(xhttp.readyState==4 && xhttp.status==200)
+              {
+                  document.getElementById("mydata1").innerHTML=xhttp.responseText;
+              }
+            //   else{
+            //       alert("Error in Loading");
+            //   }
+          };
+          xhttp.open("GET","dummyAjax1.html",true);
+          xhttp.send();
+        }
+
+        function ajaxCallAfter(){
+          var xhttp=new XMLHttpRequest();
+          xhttp.onreadystatechange = function(){
+              if(xhttp.readyState==4 && xhttp.status==200)
+              {
+                  document.getElementById("mydata2").innerHTML=xhttp.responseText;
+              }
+            //   else{
+            //       alert("Error in Loading");
+            //   }
+          };
+          xhttp.open("GET","dummyAjax2.html",true);
+          xhttp.send();
+        }
+        
+	</script>
+</head>
+<body>
+    <div id="mydata1"></div>
+    <div id="mydata2"></div>
+	<input type="button" name="btn" onclick="ajaxCall()" value="Ajax Loadind">
+  
+	<input type="button" name="btn" onclick="ajaxCallAfter()" value="Ajax Loadind">
+</body>
+</html>
