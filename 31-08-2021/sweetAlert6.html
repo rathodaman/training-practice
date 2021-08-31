@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <script> 
+            function Click() {
+                swal("Click on either the button or outside the modal.")
+                .then((value) => {
+                swal(`The returned value is: ${value}`);
+                });
+		}	
+        </script>   
+    </head>
+    <body>
+        <input type="submit" name="submit" onclick="Click()">
+    </body>   
+</html>
