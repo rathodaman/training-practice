@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>data fatch to text file</title>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("#btn1").click(function(e){
+                    $.ajax({
+                        url : "file1.txt",
+                        success : function(result,status,xhr){
+                            $("#mydata").html(result);
+                        }
+                    });
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <button id="btn1"> Click Me..</button>
+        <div id="mydata"></div>
+    </body>
+</html>

@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>data fatch to html file</title>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("#btn").click(function(){
+                    $("#mydata").load("img.html")
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <input type="button" value="click me" id="btn">
+        <h3>Load Method </h3>
+        <div id="mydata"></div>
+        
+    </body>
+</html>

@@ -1,0 +1,22 @@
+[
+    {
+        "product":"apple", 
+        "color" :"black",
+        "price" :"10,000"
+    },
+    {
+        "product":"airpoad", 
+        "color" :"red",
+        "price" :"3000"
+    },
+    {
+        "product":"ipad", 
+        "color" :"blue",
+        "price" :"5000"
+    },
+    {
+        "product":"blutooth", 
+        "color" :"pink",
+        "price" :"8000"
+    }
+]

@@ -1,0 +1,70 @@
+<html>
+    <head>
+        <style>
+            select{
+                font-size: 40px;
+                width: 50%;
+            }
+        </style>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                load_json_data('state');
+                function load_json_data(id, parent_id)
+                {
+                    var html_code = '';
+                    $.getJSON('stateCity.json', function(data){
+                        html_code += '<option value="">Select '+id+'</option>';
+                        $.each(data, function(key, value)
+                        {
+                            if(id == 'state')
+                            {
+                                if(value.parent_id == '0')
+                                {
+                                    html_code += '<option value="'+value.id+'">'+value.name+'</option>';
+                                }
+                            }
+                            else
+                            {
+                                if(value.parent_id == parent_id)
+                                {
+                                    html_code += '<option value="'+value.id+'">'+value.name+'</option>';
+                                }
+                            }
+                        });
+                        $('#'+id).html(html_code);
+                    });
+                }
+               
+                $(document).on('change', '#state', function(){
+                    var state_id = $(this).val();
+                    if(state_id != '')
+                    {
+                        load_json_data('city', state_id);
+                    }
+                    else
+                    {
+                        $('#city').html('<option value="">Select city</option>');
+                    }
+                });
+            });
+        </script>  
+    </head>
+    <body>
+        <div class="container" style="width:600px;">
+            <h1 align="center">Dropdown Using Jquery Ajax Method</h1><br/><br/>
+            <center>
+                
+                   <br />
+                   <select name="state" id="state">
+                    <option value="">Select state</option>
+                   </select><br/><br/>
+                   <br />
+                   <select name="city" id="city">
+                    <option value="">Select city</option>
+                   </select>
+            </center>
+           
+           </div>
+    </body>
+</html>
