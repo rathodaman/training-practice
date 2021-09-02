@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./container.css" rel="stylesheet">
+    <style>
+        .b1{
+            border: 3px solid;
+            background-color: antiquewhite;
+        }
+        .b2{
+            border: 3px solid;
+            background-color: aqua;
+        }
+        .b3{
+            border: 3px solid;
+            background-color: brown;
+        }
+        .b4{
+            border: 3px solid;
+            background-color: yellow;
+        }
+        .b5{
+            border: 3px solid ;
+            background-color: thistle;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+          <div class="col-md-4 b1">.col-md-4</div>
+          <div class="col-md-4 offset-md-4 b2">.col-md-4 .offset-md-4</div>
+        </div>
+        <div class="row">
+          <div class="col-md-3 offset-md-3 b3">.col-md-3 .offset-md-3</div>
+          <div class="col-md-3 offset-md-3 b4">.col-md-3 .offset-md-3</div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 offset-md-3 b5">.col-md-6 .offset-md-3</div>
+        </div>
+      </div>
+        </div>
+    <script src="./bootstrap/js/jquery.js"></script>
+    <script src="./bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>

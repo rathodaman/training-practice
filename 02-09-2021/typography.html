@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./container.css" rel="stylesheet">
+   
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <p class="h1 bg-danger">h1. Bootstrap heading</p>
+            <p class="h2 bg-warning">h2. Bootstrap heading</p>
+            <p class="h3 bg-primary">h3. Bootstrap heading</p>
+            <p class="h4 bg-secondary">h4. Bootstrap heading</p>
+            <p class="h5 bg-success">h5. Bootstrap heading</p>
+            <p class="h6 bg-transparent">h6. Bootstrap heading</p>
+        </div>
+        <div class="row">
+            <h3>
+                Fancy display heading
+                <small class="text-muted">With faded secondary text</small>
+              </h3>
+        </div>
+        <div class="row">
+            <h1 class="display-1">Display 1</h1>
+            <h1 class="display-2">Display 2</h1>
+            <h1 class="display-3">Display 3</h1>
+            <h1 class="display-4">Display 4</h1>
+            <h1 class="display-5">Display 5</h1>
+            <h1 class="display-6">Display 6</h1>
+        </div>
+        <div class="row">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident illum, culpa perferendis dolorem dolores cupiditate aliquam fuga totam tempore sint ea obcaecati modi a iusto. Possimus ut harum animi itaque?</p>
+            <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, quia quae. Nesciunt, laudantium ipsam. Nulla quasi a iure itaque, atque accusantium nesciunt deleniti, cupiditate eaque odio assumenda quidem accusamus maxime.</p>
+        </div>
+        <div class="row bg-warning">
+            <p>You can use the mark tag to <mark>highlight</mark> text.</p>
+            <p><del>This line of text is meant to be treated as deleted text.</del></p>
+            <p><s>This line of text is meant to be treated as no longer accurate.</s></p>
+            <p><ins>This line of text is meant to be treated as an addition to the document.</ins></p>
+            <p><u>This line of text will render as underlined.</u></p>
+            <p><small>This line of text is meant to be treated as fine print.</small></p>
+            <p><strong>This line rendered as bold text.</strong></p>
+            <p><em>This line rendered as italicized text.</em></p>
+        </div>
+        <div class="row">
+            <p><abbr title="attribute">attr</abbr></p>
+            <p><abbr title="HyperText Markup Language" class="initialism">HTML</abbr></p>
+        </div>
+        <div class="row bg-primary">
+            <blockquote class="blockquote">
+                <p>A well-known quote, contained in a blockquote element.</p>
+              </blockquote>
+        </div>
+        <div class="row">
+            <figure>
+                <blockquote class="blockquote">
+                  <p>A well-known quote, contained in a blockquote element.</p>
+                </blockquote>
+                <figcaption class="blockquote-footer">
+                 by <cite title="Source Title">Aman Rathod</cite>
+                </figcaption>
+              </figure>
+        </div>
+        <div class="row">
+            <p class="float-right">aman kese ho</p>
+            <p class="text-center">aman kese ho</p>
+            <p class="text-justify">aman kese ho</p>
+            <p class="text-nowrap">aman kese ho</p>
+        </div>
+        <div class="row">upper case:-
+            <p class="text-uppercase">aman kese ho</p>
+            <p class="text-lowercase">AMAN RATHOD</p>
+            <p class="text-capitalize">aman kese ho</p>
+        </div>
+        <h1>font weights and italic</h1>
+        <div class="row">
+            <p class="fw-bold">Bold text.</p>
+            <p class="fw-bolder">Bolder weight text (relative to the parent element).</p>
+            <p class="fw-normal">Normal weight text.</p>
+            <p class="fw-light">Light weight text.</p>
+            <p class="fw-lighter">Lighter weight text (relative to the parent element).</p>
+            <p class="fst-italic">Italic text.</p>
+            <p class="fst-normal">Text with normal font style</p>
+        </div>
+        <div class="row">
+            <p><a href="https://WWW.Google.com" class="text-danger">Click Me..</a></p>
+        </div>
+        <div class="row">
+            <ul class="list-unstyled">
+                <li>This is a list.</li>
+                <li>It appears completely unstyled.</li>
+                <li>Structurally, it's still a list.</li>
+                <li>However, this style only applies to immediate child elements.</li>
+                <li>Nested lists:
+                  <ul>
+                    <li>are unaffected by this style</li>
+                    <li>will still show a bullet</li>
+                    <li>and have appropriate left margin</li>
+                  </ul>
+                </li>
+                <li>This may still come in handy in some situations.</li>
+              </ul>
+        </div>
+        <div class="row">
+            <ul class="list-inline">
+                <li class="list-inline-item">This is a list item.</li>
+                <li class="list-inline-item">And another one.</li>
+                <li class="list-inline-item">But they're displayed inline.</li>
+              </ul>
+        </div>
+        <dl class="row">
+            <dt class="col-sm-3">Description lists</dt>
+            <dd class="col-sm-9">A description list is perfect for defining terms.</dd>
+          
+            <dt class="col-sm-3">Term</dt>
+            <dd class="col-sm-9">
+              <p>Definition for the term.</p>
+              <p>And some more placeholder definition text.</p>
+            </dd>
+          
+            <dt class="col-sm-3">Another term</dt>
+            <dd class="col-sm-9">This definition is short, so no extra paragraphs or anything.</dd>
+          
+            <dt class="col-sm-3 text-truncate">Truncated term is truncated</dt>
+            <dd class="col-sm-9">This can be useful when space is tight. Adds an ellipsis at the end.</dd>
+          
+            <dt class="col-sm-3">Nesting</dt>
+            <dd class="col-sm-9">
+              <dl class="row">
+                <dt class="col-sm-4">Nested definition list</dt>
+                <dd class="col-sm-8">I heard you like definition lists. Let me put a definition list inside your definition list.</dd>
+              </dl>
+            </dd>
+          </dl>
+      </div>
+    <script src="./bootstrap/js/jquery.js"></script>
+    <script src="./bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
