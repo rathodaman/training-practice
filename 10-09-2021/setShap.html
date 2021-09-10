@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradient in css</title>
+    <style>
+        .d1{
+            background:radial-gradient(closest-side at 60% 55%, red,green,blue);
+            width: 500px;
+            height: 300px;
+            color: black;
+        }
+        .d2{
+            background:radial-gradient(farthest-side at 60% 55%, red,green,blue);
+            width: 500px;
+            height: 300px;
+            color: black;
+            float: right;
+            margin-top: -22%;
+        }
+        .d3{
+            background:radial-gradient(closest-corner at 60% 55%, red,green,blue);
+            width: 500px;
+            height: 300px;
+            color: black;
+        }
+        .d4{
+            background:radial-gradient(farthest-corner 60% 55%, red,green,blue);
+            width: 500px;
+            height: 300px;
+            color: black;
+            float: right;
+            margin-top: -22%;
+        }
+        
+    </style>
+</head>
+<body>
+    
+        <div class="d1"><h1>closest-side  </h1></div>
+        <div class="d2"><h1>farthest-side </h1></div>
+        <div class="d3"><h1>closest-corner </h1></div>
+        <div class="d4"><h1>farthest-corner </h1></div>
+   
+    
+    
+</body>
+</html>
