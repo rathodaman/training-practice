@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>calc</title>
+	<script type="text/javascript">
+		var Obj ={
+			result:0,
+			calc: function(a) {
+				this.result=a;
+				return this;
+			},
+			add: function(a) {
+				this.result += a;
+				return this;
+			},
+			multi: function(a) {
+				this.result *= a;
+				return this;
+			},
+			sub: function(a) {
+				this.result -= a;
+				return this;
+			},
+			divi: function(a) {
+				this.result /= a;
+				return this;
+			},
+			toString: function() {
+				return this.result;
+			},
+		};
+		var obj=Obj.calc(10).add(5).multi(2).divi(3).sub(2);
+		alert(obj);
+	</script>
+</head>
+<body>
+
+</body>
+</html>
